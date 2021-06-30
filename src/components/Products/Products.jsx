@@ -3,10 +3,10 @@ import Grid from '@material-ui/core';
 
 const products = [
     {
-        id: 1, name: 'Shoes', description: 'Running Shoes'
+        id: 1, name: 'Shoes', description: 'Running Shoes', price: '$50'
     },
     {
-        id: 2, name: 'MacBook', description: 'Apple Macbook'
+        id: 2, name: 'MacBook', description: 'Apple Macbook', price: '$1200'
     },
 ]
 
@@ -15,7 +15,7 @@ const Products = () =>{
         <Grid container justify="center" spacing={4}>
             {products.map((products)=>(
                 <Grid item key={products.id} xs={12} sm={6} md={4} lg={3}>
-                    <Product></Product>
+                    <Product product={product}></Product>
                 </Grid>
             ))} 
         </Grid>
